@@ -8,10 +8,29 @@ check_acc.m evaluates participants’ accuracy across all conditions to identify
 procdata_anova.m performs the statistical analyses.
 
 
+Table1:The sheet1(data_raw) of column descriptions subject_data_all.xlsx 
+| #  | Column               | Description                                                                                                 |
+| -- | -------------------- | ----------------------------------------------------------------------------------------------------------- |
+| 1  | correct              | Trial-level correctness: 1 = correct, 2 = incorrect                                                         |
+| 2  | rt                   | Reaction time in seconds                                                                                    |
+| 3  | correct\_PrevTrial   | Previous-trial correctness: 1 = correct, 2 = incorrect                                                      |
+| 4  | type\_shift          | Conflict-sequence type: 1 = cC, 2 = iC, 3 = cI, 4 = iI, 9 = special case (early cI/iI or task-switch cI/iI) |
+| 5  | type\_shiftPrevTrial | Previous-trial congruency: 1 = congruent (c), 2 = incongruent (i)                                           |
+| 6  | type\_shiftCurrTrial | Current-trial congruency: 1 = congruent (C), 2 = incongruent (I)                                            |
+| 7  | type\_rule           | Current task rule: 1 = color, 2 = arrow                                                                     |
+| 8  | type\_shiftprep      | Rule-shift phase: 0 = rule-switch, 1 = rule-stable, 2 = rule-unstable (with cue), 3 = linking trial         |
+| 9  | info\_blockCount     | Mini-block index (1–12); each mini-block contains 9–14 trials                                               |
+| 10 | info\_blockLenType   | Block-length type (1–6); six predefined length patterns                                                     |
+| 11 | info\_sessionNum     | Session number within the sequence (1–3)                                                                    |
+| 12 | sti\_color           | Stimulus color: 1 = red, 2 = green, 3 = blue, 4 = yellow                                                    |
+| 13 | sti\_arrow           | Arrow direction: 1 = top-left, 2 = bottom-right, 3 = bottom-left, 4 = top-right                             |
+| 14 | sti\_correctAns      | Correct response code for the stimulus                                                                      |
+| 15 | type\_cue            | Visual cue condition: 1 = with circle cue, 2 = without circle cue                                           |
+| 16 | type\_tDCS           | Brain-stimulation condition: 1 = real tDCS, 2 = sham                                                        |
+| 17 | sbjID                | Participant ID                                                                                              |
 
 
-
-Table1:The sheet1(datares) of column descriptions for sbject_data_all.xlsx and sbject_data_proc.xlsx 
+Table2:The sheet1(datares) of column descriptions subject_data_proc.xlsx 
 | #  | Column                  | Description                                                                                                                                                                                                                                                                                                                                         |
 | -- | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1  | **acc**                 | Accuracy for the current trial: **1** = correct, **0** = incorrect                                                                                                                                                                                                                                                                                  |
@@ -28,7 +47,7 @@ Table1:The sheet1(datares) of column descriptions for sbject_data_all.xlsx and s
 | 12 | **sbjID**               | Participant ID                                                                                                                                                                                                                                                                                                                                      |
 
 
-Table2:The sheet2(datares_inte) of column descriptions for sbject_data_all.xlsx and sbject_data_proc.xlsx 
+Table3:The sheet2(datares_inte) of column descriptions for subject_data_proc.xlsx 
 | #  | Column               | Description                                                                                      |
 | -- | -------------------- | ------------------------------------------------------------------------------------------------ |
 | 1  | accConflict\_PrevC   | Conflict effect on accuracy when the previous trial was congruent: accuracy(cC) − accuracy(cI)   |
