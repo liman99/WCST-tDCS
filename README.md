@@ -6,3 +6,42 @@ sbject_data_proc.xlsx is the cleaned dataset prepared for statistical analysis.
 loaddata.m processes the raw data and generates the dataset saved as sbject_data_proc.xlsx.  
 check_acc.m evaluates participants’ accuracy across all conditions to identify and exclude those performing below chance level.  
 procdata_anova.m performs the statistical analyses.
+
+
+
+
+
+Table1:The sheet1(datares) of column descriptions for sbject_data_all.xlsx and sbject_data_proc.xlsx 
+| #  | Column                  | Description                                                                                                                                                                                                                                                                                                                                         |
+| -- | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1  | **acc**                 | Accuracy for the current trial: **1** = correct, **0** = incorrect                                                                                                                                                                                                                                                                                  |
+| 2  | **rt**                  | Reaction time for the current trial, in **seconds**                                                                                                                                                                                                                                                                                                 |
+| 3  | **RRAdj**               | Speed-accuracy trade-off index                                                                                                                                                                                                                                                                                                                      |
+| 4  | **acc\_raw**            | Raw accuracy (i.e., accuracy calculated regardless of the previous trial’s outcome)                                                                                                                                                                                                                                                                 |
+| 5  | **type\_CongSeq**       | Conflict-sequence type for the current trial based on the combination of the previous and current trial congruency:  <br> 1 = cC (previous congruent → current congruent)  <br> 2 = iC (previous incongruent → current congruent)  <br> 3 = cI (previous congruent → current incongruent)  <br> 4 = iI (previous incongruent → current incongruent) |
+| 6  | **type\_congPreTrial**  | Congruency of the **previous** trial:  <br> 1 = congruent (c)  <br> 2 = incongruent (i)                                                                                                                                                                                                                                                             |
+| 7  | **type\_congCurrTrial** | Congruency of the **current** trial:  <br> 1 = congruent (C)  <br> 2 = incongruent (I)                                                                                                                                                                                                                                                              |
+| 8  | **type\_rule**          | Task rule:  <br> 1 = color rule  <br> 2 = arrow rule                                                                                                                                                                                                                                                                                                |
+| 9  | **type\_shiftprep**     | Rule-shift phase:  <br> 1 = rule-stable period  <br> 2 = rule-unstable period (with cue)                                                                                                                                                                                                                                                            |
+| 10 | **type\_cue**           | Visual cue condition:  <br> 1 = with circle cue  <br> 2 = without circle cue                                                                                                                                                                                                                                                                        |
+| 11 | **type\_tDCS**          | Brain stimulation condition:  <br> 1 = real stimulation  <br> 2 = sham (control)                                                                                                                                                                                                                                                                    |
+| 12 | **sbjID**               | Participant ID                                                                                                                                                                                                                                                                                                                                      |
+
+
+Table2:The sheet2(datares_inte) of column descriptions for sbject_data_all.xlsx and sbject_data_proc.xlsx 
+| #  | Column               | Description                                                                                      |
+| -- | -------------------- | ------------------------------------------------------------------------------------------------ |
+| 1  | accConflict\_PrevC   | Conflict effect on accuracy when the previous trial was congruent: accuracy(cC) − accuracy(cI)   |
+| 2  | accConflict\_PrevI   | Conflict effect on accuracy when the previous trial was incongruent: accuracy(iC) − accuracy(iI) |
+| 3  | accCSE               | Accuracy-based conflict serial effect: accConflict\_PrevC − accConflict\_PrevI                   |
+| 4  | rtConflict\_PrevC    | Conflict effect on RT when the previous trial was congruent: RT(cI) − RT(cC)                     |
+| 5  | rtConflict\_PrevI    | Conflict effect on RT when the previous trial was incongruent: RT(iI) − RT(iC)                   |
+| 6  | rtCSE                | RT-based conflict serial effect: rtConflict\_PrevC − rtConflict\_PrevI                           |
+| 7  | RRadjConflict\_PrevC | Integrated-efficiency conflict effect when the previous trial was congruent                      |
+| 8  | RRadjConflict\_PrevI | Integrated-efficiency conflict effect when the previous trial was incongruent                    |
+| 9  | RRadjCSE             | Integrated-efficiency conflict serial effect: RRadjConflict\_PrevC − RRadjConflict\_PrevI        |
+| 10 | type\_rule           | Task rule: 1 = color, 2 = arrow                                                                  |
+| 11 | type\_shiftprep      | Rule phase: 1 = rule-stable, 2 = rule-unstable                                                   |
+| 12 | type\_cue            | Visual cue: 1 = with circle, 2 = without circle                                                  |
+| 13 | type\_tDCS           | Stimulation: 1 = real, 2 = sham                                                                  |
+| 14 | sbjID                | Participant ID                                                                                   |
