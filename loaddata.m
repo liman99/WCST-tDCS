@@ -4,7 +4,7 @@ clear all
 
 
 dataall=readtable('subject_data_all.xlsx','Sheet','data_raw');
-outfname='sbject_data_proc.xlsx';
+outfname='subject_data_proc.xlsx';
 
 sbjlist=unique(dataall.sbjID);
 
@@ -172,3 +172,4 @@ function alldata=loaddata_sbjcore(datasel)
     alldata.behres_inte=behres_inte;
 
 end
+
