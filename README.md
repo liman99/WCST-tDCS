@@ -18,7 +18,7 @@ Table1:The sheet1(data_raw) of column descriptions subject_data_all.xlsx
 | 5  | type\_shiftPrevTrial | Previous-trial congruency: 1 = congruent (c), 2 = incongruent (i)                                           |
 | 6  | type\_shiftCurrTrial | Current-trial congruency: 1 = congruent (C), 2 = incongruent (I)                                            |
 | 7  | type\_rule           | Current task rule: 1 = color, 2 = arrow                                                                     |
-| 8  | type\_shiftprep      | rule-switch preparatory phase: 0 = rule confirmation phase，1 = rule stable phase, 2 = switch preparatory phase (with cue), 3 = switch alert phase |
+| 8  | type\_shiftprep      | rule-switch preparatory phase: 0 = rule confirmation phase，1 = rule stable phase, 2 = switch preparatory phase, 3 = switch alert phase |
 | 9  | info\_blockCount     | Mini-block index (1–12); each mini-block contains 9–14 trials                                               |
 | 10 | info\_blockLenType   | Block-length type (1–6); six predefined length patterns                                                     |
 | 11 | info\_sessionNum     | Session number within the sequence (1–3)                                                                    |
