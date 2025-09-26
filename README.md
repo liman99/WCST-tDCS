@@ -11,7 +11,7 @@ procdata_anova.m performs the statistical analyses.
 Table1:The sheet1(data_raw) of column descriptions subject_data_all.xlsx 
 | #  | Column               | Description                                                                                                 |
 | -- | -------------------- | ----------------------------------------------------------------------------------------------------------- |
-| 1  | correct              | Trial-level correctness: 1 = correct, 2 = incorrect                                                         |
+| 1  | correct              | Trial-level correctness: 1 = correct, 0 = incorrect，Nan = miss trial                                       |
 | 2  | rt                   | Reaction time in seconds                                                                                    |
 | 3  | correct\_PrevTrial   | Previous-trial correctness: 1 = correct, 2 = incorrect                                                      |
 | 4  | type\_shift          | Conflict-sequence type: 1 = cC, 2 = iC, 3 = cI, 4 = iI, 9 = special case (early cI/iI or task-switch cI/iI) |
